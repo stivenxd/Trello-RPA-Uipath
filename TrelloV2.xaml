@@ -1134,7 +1134,7 @@
           <av:Size x:Key="ShapeSize">200,66</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Crear y llenar Tarjetas" sap:VirtualizedContainerService.HintSize="476,1325" sap2010:WorkflowViewState.IdRef="Sequence_34">
+      <Sequence DisplayName="Crear y llenar Tarjetas" sap:VirtualizedContainerService.HintSize="476,1363" sap2010:WorkflowViewState.IdRef="Sequence_34">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="variabletarj" />
           <Variable x:TypeArguments="x:String" Name="varnombTarj" />
@@ -1166,13 +1166,13 @@
             </scg:List>
           </ui:MultipleAssign.AssignOperations>
         </ui:MultipleAssign>
-        <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Anexar navegador 'firefox.exe  RPA  Trello'" sap:VirtualizedContainerService.HintSize="434,1064" sap2010:WorkflowViewState.IdRef="BrowserScope_5" InformativeScreenshot="4fcb5b0f003c4d1fc57728c43deac5a8" Selector="&lt;html app='firefox.exe' title='* | Trello' /&gt;">
+        <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Anexar navegador 'firefox.exe  RPA  Trello'" sap:VirtualizedContainerService.HintSize="434,1102" sap2010:WorkflowViewState.IdRef="BrowserScope_5" InformativeScreenshot="4fcb5b0f003c4d1fc57728c43deac5a8" Selector="&lt;html app='firefox.exe' title='* | Trello' /&gt;">
           <ui:BrowserScope.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,918" sap2010:WorkflowViewState.IdRef="Sequence_35">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,956" sap2010:WorkflowViewState.IdRef="Sequence_35">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1268,7 +1268,7 @@
                     </ui:CursorPosition>
                   </ui:Click.CursorPosition>
                   <ui:Click.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="63f0b561-69dd-425a-ab5d-342e2cbc4db6" InformativeScreenshot="01b8ab23fef0977fc2b1c6601c29558c" Selector="&lt;webctrl aaname='{{varnombTarj}}' tag='SPAN' class='list-card-title js-card-name' /&gt;&#xD;&#xA;">
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="63f0b561-69dd-425a-ab5d-342e2cbc4db6" InformativeScreenshot="01b8ab23fef0977fc2b1c6601c29558c" Selector="&lt;webctrl parentid='board' tag='DIV' class='list js-list-content' innertext='{{variabletarj}}*' /&gt;&lt;webctrl aaname='{{varnombTarj}}*' tag='SPAN' class='list-card-title js-card-name' /&gt;">
                       <ui:Target.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:Target.TimeoutMS>
@@ -1278,7 +1278,7 @@
                     </ui:Target>
                   </ui:Click.Target>
                 </ui:Click>
-                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Click_28" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic 'DIV'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_29" KeyModifiers="None" MouseButton="BTN_LEFT">
                   <ui:Click.CursorPosition>
                     <ui:CursorPosition Position="Center">
                       <ui:CursorPosition.OffsetX>
@@ -1290,7 +1290,7 @@
                     </ui:CursorPosition>
                   </ui:Click.CursorPosition>
                   <ui:Click.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="20f2a098-b9aa-4133-95c4-f6ed1e45a1ff">
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d7d31e44-1235-49ea-a030-f50584f10e10" InformativeScreenshot="e92d24b8a946573be82824564e30fdc3" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='9' parentid='chrome-container' tag='DIV' /&gt;">
                       <ui:Target.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:Target.TimeoutMS>
